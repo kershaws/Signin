@@ -1,0 +1,94 @@
+import java.util.Scanner;
+
+public class Sign_in {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		String char1;
+		String char2;
+		String char3;
+		String char4;
+		String char5;
+		String Num;
+		String y_n=null;
+		String information;
+		
+		Scanner input = new Scanner(System.in);
+		
+		
+			
+			System.out.println("Please enter your First Name");
+			while (!input.hasNext())
+			{
+				input.next();
+				System.out.println("Please enter your First Name");
+			}
+			char1 =input.next();
+			
+			System.out.println("Please enter your Last Name");
+			while (!input.hasNext())
+			{
+				input.next();
+				System.out.println("Please enter your Last Name");
+			}
+			char2 =input.next();
+			
+			System.out.println("Please enter your Email");
+			while (!input.hasNext())
+			{
+				input.next();
+				System.out.println("Please enter your Email");
+			}
+			char3 =input.next();
+			
+			System.out.println("Please enter your Age");
+			while (!input.hasNext())
+			{
+				input.next();
+				System.out.println("Please enter your Age");
+			}
+			char4 =input.next();
+			
+			System.out.println("Please enter your School Grade");
+			while (!input.hasNext())
+			{
+				input.next();
+				System.out.println("Please enter your School Grade");
+			}
+			char5 =input.next();
+			
+			System.out.println( "Please enter your Phone Number");
+			while (!input.hasNext());
+			{
+				input.next();
+				System.out.println ("Please enter your Phone Number");
+			}
+			Num=input.next();
+			
+			System.out.println(" Please verify your information");
+			
+			
+			do{
+				System.out.println(" Is this your First Name? " + char1);
+				while (!input.hasNextLine());
+			
+				System.out.println(" Is this your Last Name? " + char2);
+				while (!input.hasNextLine());
+				
+				System.out.println( " Is this your Email Address? " + char3);
+				while (!input.hasNextLine());
+				
+				System.out.println( " Is this your Age? " + char4);
+				while (!input.hasNextLine());
+		
+				System.out.println( " Is this your School Grade? " + char5);
+				while (!input.hasNextLine());
+				
+				System.out.println( " is this your Phone Number? " + Num);
+				
+			}while y_n== true
+			
+	}
+ 
+}
